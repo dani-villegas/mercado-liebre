@@ -1,0 +1,183 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 12px;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #eee7e7;
+
+}
+header{
+    background-color: #dfdf1f;
+    width: 100%;
+}
+.top-header{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    
+}
+.logo{
+    width: 50%;
+}
+.search{
+    width: 50%;
+}
+
+
+.navigation{
+    font-size: 12px;    
+}
+.items{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+    list-style-type: none;
+    color: white;
+}
+
+    
+.my-input {
+    width: 200px;
+    height: 15px;
+
+}
+div.burger-menu i{
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    height: 40px;
+    margin: 10px 0px 0px 0px;
+    padding: 5px;
+    width: 40px;
+    text-align: center;
+}
+
+div.burger-menu{
+    text-align: center;
+}
+
+main{
+    width: 90%;
+    margin: 0 auto 2em;
+
+}  
+h2{
+    font-size: 24px;
+    font-weight: bold;
+    width: 360px;
+    color: #666;
+}
+.price{
+    font-size: 18px;
+    
+}
+
+main section article i,
+.discount{
+    color: #39b54a;
+    font-size: 16px;
+}
+.description{
+    font-size: 16px;
+    font-weight: normal;
+    width: 300px;
+    display: none;
+}
+h3,
+.benefits{
+    color: black;
+    text-align: center;
+}
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.product{
+    margin-top: 10px;
+    width: 230px;
+    justify-content: center;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+
+}
+.information{
+    border-top: 3px solid #ebebeb;
+    text-align: start;
+}
+
+footer{
+    text-align: center;
+    font-size: 16px;
+    width: 100%;
+    padding: 10px 30px;
+    margin: auto;
+    background-color: white;
+}
+h3{
+    text-align: center;
+}
+
+.icon-footer{
+    color: #0044AA;
+    background-color: white;
+    font-size: 2em;
+
+}
+.footer-top{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.info{
+    width: 30%;
+}
+.footer-botton{
+    margin-top: 10px;
+}
+
+/*tablets*/
+@media(min-width:361px){
+    .navigation{
+        display: none;
+    }
+    .description{
+        display: none;
+    }
+    .footer-top{
+        flex-direction: column;
+    }
+
+
+
+}
+
+/*desctop*/
+@media(min-width:769px){
+    .navigation{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .burger-menu{
+        display: none;
+    }
+    .footer-top{
+        flex-direction: row;
+    }
+
+
+}
